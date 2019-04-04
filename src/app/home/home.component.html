@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+
+<div class="container" >
+  <h3>Lead Management System</h3>
+  <form action="" class="form-group" (ngSubmit)="onSubmit()">
+
+<input type="text" name="name" class="form-control" placeholder="name" [(ngModel)]="name"> 
+  
+<input type="email" name="email" class="form-control" placeholder="email" [(ngModel)]="email">         
+<div class="file-field input-field">
+      <div class="btn">
+        <span>Upload image</span>
+        <input type="file" (change)="fileUpload($event)" >
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  <div class="file-field input-field">
+      <div class="btn">
+        <span>Upload Resume</span>
+        <input type="file" (change)="uploadResume($event)" >
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+<button class="btn btn-success">Submit</button>
+
+</form>
+
+</div>
+

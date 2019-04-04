@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+
+<div class="jumbotron">
+  <h1 class="display-3">User Details</h1>
+
+        <div *ngIf="imageBlobUrl" class="imgContainer">
+           <img src={{imageBlobUrl}} alt="" class="image">
+
+        </div>
+       
+  	<h3>Name</h3>
+  <fieldset>
+    <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly="" value={{name}}>
+  </fieldset>
+  	<h3>Email</h3>
+  <fieldset>
+    <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly="" value={{email}}>
+  </fieldset>
+
+
+  
+</div>
